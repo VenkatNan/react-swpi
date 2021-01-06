@@ -19,7 +19,14 @@ class ShipList extends Component {
             {this.state.results.map(
                 (shipName,idx) => (
                     <div key={idx}>
+                        <Link
+                            to={{
+                                pathname: '/ship',
+                                state: { shipName }
+                            }}
+                        >
                         {shipName.name}
+                        </Link>
                     </div>
                 )
             )}

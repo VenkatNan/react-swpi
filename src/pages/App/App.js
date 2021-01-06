@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import ShipList from "../ShipList/ShipList";
+import ShipDetails from "../ShipDetails/ShipDetails";
 
 
 class App extends Component {
@@ -10,7 +11,16 @@ class App extends Component {
     return ( 
       <div>
         <h1>Aliiive</h1>
-        <ShipList />
+        <a href="/shiplist">Ship List</a>|
+
+        <a href="ship">Ship Details</a>
+
+        <Route exact path='/shiplist' render={() =>  <ShipList/>} />
+        <Route exact path='/ship' render={({location})=> 
+          <ShipDetails location={location}/>
+          
+        }/>
+        
       </div>
      );
   }
