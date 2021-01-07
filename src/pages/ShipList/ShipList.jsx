@@ -17,8 +17,8 @@ class ShipList extends Component {
             <>
             <h4>
             {this.state.results.map(
-                (shipName,idx) => (
-                    <div key={idx}>
+                (shipName) => (
+                    <div key={shipName.index}>
                         <Link
                             to={{
                                 pathname: '/ship',

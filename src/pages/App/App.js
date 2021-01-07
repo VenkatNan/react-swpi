@@ -11,14 +11,12 @@ class App extends Component {
     return ( 
       <div>
         <h1>Aliiive</h1>
-        <a href="/shiplist">Ship List</a>|
-
-        <a href="ship">Ship Details</a>
+        <a href="/shiplist">Ship List</a>
 
         <Route exact path='/shiplist' render={() =>  <ShipList/>} />
+
         <Route exact path='/ship' render={({location})=> 
           <ShipDetails location={location}/>
-          
         }/>
         
       </div>
