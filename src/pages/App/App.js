@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <h1 id='header'><a href="/shiplist"> Star Wars Starships </a></h1>
         
-
+        <h2 class="listLink"><a href="/shiplist"> Ship List</a></h2>
         <Route exact path='/shiplist' render={() =>  <ShipList/>} />
 
         <Route exact path='/ship' render={({location})=> 

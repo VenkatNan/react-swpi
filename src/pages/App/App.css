@@ -52,9 +52,18 @@ a:hover{
   padding: 10px;
 }
 
+.listLink{
+  background-color: #282c34;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .listItems{
   display:flex;
+  flex-wrap:wrap ;
   align-items: center;
+  justify-content: center;
   margin: 10px;
 }
 
@@ -62,15 +71,13 @@ a:hover{
   text-decoration: none;
   margin: 10px;
   padding: 5px;
-}
-
-button{
-  background-color: rgb(24, 61, 24);
+  background-color: rgb(40, 58, 56);
   color: #fff;
   border: none;
   border-radius: 8px;
   font-size: large;
-  padding: 5px;
+  width: 150px;
+  height: 150px;
 }
 
 .shipDetail{
