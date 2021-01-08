@@ -17,19 +17,20 @@ class ShipDetails extends Component {
     render() { 
         const {shipDetails}  = this.state; 
         return ( 
-            <>
-            <h1>Ship Details</h1>
+            <div >
             {shipDetails.name ?
-                <>
-                <h2>{shipDetails.name}</h2>
-                <h2>{shipDetails.model}</h2>
-                </>
+                <div class="shipDetail">
+                <h2>Name: </h2>
+                    <p>{ shipDetails.name}</p>
+                <h2>Model: </h2>
+                    <p>{shipDetails.model}</p>
+                </div>
                 :
                 <>
                 <p>Loading Ship Details . . . . . . </p>
                 </>
             }
-            </>
+            </div>
          );
     }
 }

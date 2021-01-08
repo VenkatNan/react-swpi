@@ -14,8 +14,8 @@ class ShipList extends Component {
 
     render() { 
         return (  
-            <>
-            <h4>
+            <div class='listItems'>
+          
             {this.state.results.map(
                 (shipName) => (
                     <div key={shipName.index}>
@@ -25,13 +25,12 @@ class ShipList extends Component {
                                 state: { shipName }
                             }}
                         >
-                        {shipName.name}
+                        <button class='listName'>{shipName.name}</button>
                         </Link>
                     </div>
                 )
             )}
-            </h4>
-            </>
+            </div>
         );
     }
 }

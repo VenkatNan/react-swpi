@@ -10,8 +10,8 @@ class App extends Component {
   render() { 
     return ( 
       <div>
-        <h1>Aliiive</h1>
-        <a href="/shiplist">Ship List</a>
+        <h1 id='header'><a href="/shiplist"> Star Wars Starships </a></h1>
+        
 
         <Route exact path='/shiplist' render={() =>  <ShipList/>} />
 
